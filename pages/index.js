@@ -39,7 +39,6 @@ const Home = () => (
       >
         Hello, I&apos;m an indie app developer based in Japan!
       </Box>
-
       <Box display={{ md: 'flex' }}>
         <Box flexGrow={1}>
           <Heading as="h2" variant="page-title">
@@ -64,11 +63,11 @@ const Home = () => (
             overflow="hidden"
           >
             <ProfileImage
-              src="/images/takuya.jpg"
+              src="/images/xeromoses.jpg"
               alt="Profile image"
               borderRadius="full"
-              width="100%"
-              height="100%"
+              width={100}
+              height={100}
             />
           </Box>
         </Box>
@@ -90,8 +89,12 @@ const Home = () => (
           </NextLink>
           . He publishes content for marketing his products and his YouTube
           channel called &quot;
-          <NextLink href="https://www.youtube.com/devaslife" passHref>
-            <Link target="_blank">Dev as Life</Link>
+          <NextLink
+            href="https://www.youtube.com/devaslife"
+            passHref
+            target="_blank"
+          >
+            <Link>Dev as Life</Link>
           </NextLink>
           &quot; has more than 100k subscribers.
         </Paragraph>
@@ -151,7 +154,7 @@ const Home = () => (
         </Heading>
         <List>
           <ListItem>
-            <Link href="https://github.com/craftzdog" target="_blank">
+            <NextLink href="https://github.com/craftzdog" target="_blank">
               <Button
                 variant="ghost"
                 colorScheme="teal"
@@ -159,10 +162,10 @@ const Home = () => (
               >
                 @craftzdog
               </Button>
-            </Link>
+            </NextLink>
           </ListItem>
           <ListItem>
-            <Link href="https://twitter.com/inkdrop_app" target="_blank">
+            <NextLink href="https://twitter.com/inkdrop_app" target="_blank">
               <Button
                 variant="ghost"
                 colorScheme="teal"
@@ -170,10 +173,10 @@ const Home = () => (
               >
                 @inkdrop_app (English)
               </Button>
-            </Link>
+            </NextLink>
           </ListItem>
           <ListItem>
-            <Link href="https://twitter.com/craftzdog" target="_blank">
+            <NextLink href="https://twitter.com/craftzdog" target="_blank">
               <Button
                 variant="ghost"
                 colorScheme="teal"
@@ -181,10 +184,10 @@ const Home = () => (
               >
                 @craftzdog (日本語)
               </Button>
-            </Link>
+            </NextLink>
           </ListItem>
           <ListItem>
-            <Link href="https://instagram.com/craftzdog" target="_blank">
+            <NextLink href="https://instagram.com/craftzdog" target="_blank">
               <Button
                 variant="ghost"
                 colorScheme="teal"
@@ -192,7 +195,7 @@ const Home = () => (
               >
                 @craftzdog
               </Button>
-            </Link>
+            </NextLink>
           </ListItem>
         </List>
 

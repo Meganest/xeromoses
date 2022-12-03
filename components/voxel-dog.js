@@ -51,6 +51,8 @@ const VoxelDog = () => {
       container.appendChild(renderer.domElement)
       setRenderer(renderer)
 
+      console.log('first')
+
       // 640 -> 240
       // 8   -> 6
       const scale = scH * 0.005 + 4.8

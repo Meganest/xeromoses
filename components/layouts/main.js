@@ -4,8 +4,9 @@ import NavBar from '../navbar'
 import { Box, Container } from '@chakra-ui/react'
 import Footer from '../footer'
 import VoxelDogLoader from '../voxel-dog-loader'
+import FiberTest from '../fiber-test'
 
-const LazyVoxelDog = dynamic(() => import('../voxel-dog'), {
+const LazyVoxelDog = dynamic(() => import('../fiber-test'), {
   ssr: false,
   loading: () => <VoxelDogLoader />
 })
@@ -33,7 +34,7 @@ const Main = ({ children, router }) => {
       </Head>
       <NavBar path={router.asPath} />
       <Container maxW="container.md" pt={14}>
-        {/* <LazyVoxelDog /> */}
+        <LazyVoxelDog />
         {children}
         <Footer />
       </Container>
